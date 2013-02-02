@@ -38,10 +38,22 @@
 
 .lgpad
 {
-    padding: 15px;
+    padding: 20px;
 }
 
 .smpad
 {
     padding: 10px;
+}
+
+#leftgrcontainer
+{
+    width: auto;
+    margin: 0;
+}
+
+.leftcontpad
+{
+    padding-left: 10px;
+    padding-right: 30px;
 }

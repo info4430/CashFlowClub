@@ -1,6 +1,8 @@
 ﻿body 
 {
     font-family: Agency FB;
+    color: #467019;
+    font-size: 18px;
 }
 
 #masthead
@@ -14,7 +16,25 @@
 }
 
 h1
+{    
+    font-weight: bold;
+    font-size: 30px;
+}
+
+h2
 {
-    color: #467019;
-    font-weight: bold
+    font-weight: normal;
+    font-size: 18px;
+}
+
+#leftgrcontainer
+{
+    background-color: #467019;
+    color: White;
+}
+
+hr
+{
+    color: #E5E749;
+    width: auto;
 }
