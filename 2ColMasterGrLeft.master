@@ -4,12 +4,12 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>UVU CashFlow Club Master</title>
-
+    
     <link href="Styles/Layout.css" rel="Stylesheet" type="text/css" />
     <link href="Styles/Styles.css" rel="Stylesheet" type="text/css" />
 
     <asp:ContentPlaceHolder id="head" runat="server">
+        <title>UVU CashFlow Club Master</title>
     </asp:ContentPlaceHolder>
 </head>
 <body>
