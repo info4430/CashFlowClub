@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="LeftColumn" Runat="Server">
     <h1>
-        Welcome>    
+        Welcome    
     </h1>
     <p>
         General welcome / about info
