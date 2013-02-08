@@ -36,6 +36,11 @@
     float: left;
 }
 
+.moveright
+{
+    float: right;
+}
+
 .lgpad
 {
     padding: 20px;

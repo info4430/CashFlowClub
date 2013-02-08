@@ -4,21 +4,27 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <title>UVU CashFlow Club Master</title>
     
     <link href="Styles/Layout.css" rel="Stylesheet" type="text/css" />
     <link href="Styles/Styles.css" rel="Stylesheet" type="text/css" />
 
     <asp:ContentPlaceHolder id="head" runat="server">
-        <title>UVU CashFlow Club Master</title>
     </asp:ContentPlaceHolder>
 </head>
+
 <body>
     <form id="form1" runat="server">
     <div id="container">
         <div id="masthead">
-            <asp:Image class="moveleft" ID="UVULogo" runat="server" ImageUrl="~/images/UVULogo.png" AlternateText="UVU Logo" />
+            <asp:Image ID="UVULogo" runat="server" ImageUrl="~/images/UVULogo.png" AlternateText="UVU Logo" />
             <asp:Image ID="CashFlowHeader" runat="server" ImageUrl="~/images/CashFlowClub.png" 
                 AlternateText="CashFlow Club" />
+
+            <asp:Menu ID="Menu1" runat="server" 
+                DataSourceID="SiteMapDataSource1">
+            </asp:Menu>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
         </div>    
 
         <div id="maincontent">
@@ -39,19 +45,19 @@
 
                         <h2>Subheading</h2>
 
-                        <p>Fusce eget justo at odio posuere dignissim. Sed porta, turpis sit amet viverra rhoncus, mauris urna 
-                        interdum erat, nec semper dui diam ut libero. Donec adipiscing placerat metus. Integer eu eros vel risus 
-                        ornare consequat. </p>
+                        <p>Fusce eget justo at odio posuere dignissim. Sed porta, turpis sit amet viverra rhoncus, mauris 
+                        urna interdum erat, nec semper dui diam ut libero. Donec adipiscing placerat metus. Integer eu eros 
+                        vel risus ornare consequat. </p>
 
                         <hr />
 
                         <h2>Subheading 2</h2>
 
-                        <p>Curabitur sem erat, tempor non, ullamcorper quis, dapibus a, ante. Aliquam tempus tellus eget est. In 
-                        hendrerit turpis sed ligula. Integer vulputate nibh congue magna. Duis commodo leo sit amet quam. Nunc 
-                        commodo sodales nunc. Donec est nunc, porttitor et, accumsan nec, pretium quis, mauris. Duis sapien. 
-                        Nulla felis lorem, accumsan vitae, ultricies et, hendrerit vel, massa. In nonummy tortor et metus. Aenean 
-                        lacinia orci non risus. Aenean vulputate vel lectus.</p>
+                        <p>Curabitur sem erat, tempor non, ullamcorper quis, dapibus a, ante. Aliquam tempus tellus eget 
+                        est. In hendrerit turpis sed ligula. Integer vulputate nibh congue magna. Duis commodo leo sit 
+                        amet quam. Nunc commodo sodales nunc. Donec est nunc, porttitor et, accumsan nec, pretium quis, 
+                        mauris. Duis sapien. Nulla felis lorem, accumsan vitae, ultricies et, hendrerit vel, massa. In 
+                        nonummy tortor et metus. Aenean lacinia orci non risus. Aenean vulputate vel lectus.</p>
                     </asp:ContentPlaceHolder>
                     </div>
                 </div>
