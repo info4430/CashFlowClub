@@ -17,13 +17,12 @@
     <form id="form1" runat="server">
     <div id="container">
         <div id="masthead">
+
+
             <asp:Image ID="UVULogo" runat="server" ImageUrl="~/images/UVULogo.png" AlternateText="UVU Logo" />
             <asp:Image ID="CashFlowHeader" runat="server" ImageUrl="~/images/CashFlowClub.png" 
                 AlternateText="CashFlow Club" />
 
-            <asp:Menu ID="Menu1" runat="server" 
-                DataSourceID="SiteMapDataSource1">
-            </asp:Menu>
             <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
         </div>    
 
