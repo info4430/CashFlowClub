@@ -16,6 +16,7 @@
     </p>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="RightColumn" Runat="Server">
-
+    <asp:Login ID="Login1" runat="server" CssClass="center">
+    </asp:Login>
 </asp:Content>
 
