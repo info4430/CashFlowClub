@@ -32,7 +32,8 @@
                 <div class="lgpad">
                 <asp:ContentPlaceHolder id="LeftColumn" runat="server">
                     <h1>Main Heading</h1>
-                
+                </asp:ContentPlaceHolder>
+
                 <div id="leftgrcontainer">
                     <div class="lgpad">
                     <asp:ContentPlaceHolder ID="LeftColumnGreen" runat="server">
@@ -61,7 +62,6 @@
                     </asp:ContentPlaceHolder>
                     </div>
                 </div>
-                </asp:ContentPlaceHolder>
                 </div>
             </div>
 
