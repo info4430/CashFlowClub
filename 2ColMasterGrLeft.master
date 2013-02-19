@@ -22,7 +22,11 @@
                 AlternateText="CashFlow Club" />
 
             <asp:Menu ID="Menu1" runat="server" 
-                DataSourceID="SiteMapDataSource1">
+                DataSourceID="SiteMapDataSource1" PathSeparator="|" CssClass="moveright">
+                <DynamicMenuItemStyle CssClass="moveright" ForeColor="White" />
+                <DynamicSelectedStyle ForeColor="#E5E749" />
+                <StaticMenuItemStyle CssClass="moveright" ForeColor="White" />
+                <StaticSelectedStyle ForeColor="#E5E749" />
             </asp:Menu>
             <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
         </div>    
