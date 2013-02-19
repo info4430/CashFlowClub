@@ -39,6 +39,24 @@ h2
     color: White;
 }
 
+#leftwwhcontainer
+{
+    background-color: white;
+    color: #467019;
+}
+
+#rightgrcolumn
+{
+    background-color: #467019;
+    color: White;
+}
+
+#singlecolumn
+{
+    background-color: #FFFFFF;
+    color: #467019;
+}
+
 hr
 {
     color: #E5E749;
