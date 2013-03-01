@@ -7,7 +7,36 @@
                 </asp:Content>
 <asp:Content ID="Content6" runat="server" 
     contentplaceholderid="LeftColumnWhite">
-                        <h2>News1</h2>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+    ConnectionString="<%$ ConnectionStrings:NewsConnectionString %>" 
+    SelectCommand="SELECT * FROM [News] ORDER BY [N_Date]"></asp:SqlDataSource>
+
+
+    <asp:DataList ID="News" runat="server" DataKeyField="N_ID" 
+        DataSourceID="SqlDataSource1">
+        <ItemTemplate>
+             <h2>
+                <asp:Label ID="N_IDLabel" runat="server" Text='<%# Eval("N_ID") %>' />
+                <br />
+            </h2>
+            
+            
+            <p>
+                <asp:Label ID="N_DateLabel" runat="server" Text='<%# Eval("N_Date") %>' />
+                <br />
+            </p>
+           
+            <p>
+                <asp:Label ID="N_DescrLabel" runat="server" Text='<%# Eval("N_Descr") %>' />
+                <br />
+            </p>
+            <hr />
+<br />
+        </ItemTemplate>
+    </asp:DataList>
+
+
+                       
                         
                         <p>The Cash flow club is getting a new webpage.</p>
 
