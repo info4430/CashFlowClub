@@ -16,13 +16,14 @@
         DataSourceID="SqlDataSource1">
         <ItemTemplate>
              <h2>
-                <asp:Label ID="N_Title" runat="server" Text='<%# Eval("Title") %>' />
+                <asp:Label ID="N_IDLabel" runat="server" Text='<%# Eval("Title") %>' />
                 <br />
             </h2>
             
             
             <p>
-                <asp:Label ID="N_DateLabel" runat="server" Text='<%# Eval("N_Date") %>' />
+                <asp:Label ID="N_DateLabel" runat="server" 
+                    Text='<%# Eval("N_Date", "{0:d}") %>' />
                 <br />
             </p>
            
@@ -34,4 +35,11 @@
 <br />
         </ItemTemplate>
     </asp:DataList>
+
+
+                       
+                        
+                        
+                    </asp:Content>
+
 
