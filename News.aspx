@@ -16,7 +16,7 @@
         DataSourceID="SqlDataSource1">
         <ItemTemplate>
              <h2>
-                <asp:Label ID="N_IDLabel" runat="server" Text='<%# Eval("N_ID") %>' />
+                <asp:Label ID="N_Title" runat="server" Text='<%# Eval("Title") %>' />
                 <br />
             </h2>
             
@@ -34,29 +34,4 @@
 <br />
         </ItemTemplate>
     </asp:DataList>
-
-
-                       
-                        
-                        <p>The Cash flow club is getting a new webpage.</p>
-
-                        <hr />
-
-                        <h2>Subheading</h2>
-
-                        <p>Fusce eget justo at odio posuere dignissim. Sed porta, turpis sit amet viverra rhoncus, mauris 
-                        urna interdum erat, nec semper dui diam ut libero. Donec adipiscing placerat metus. Integer eu eros 
-                        vel risus ornare consequat. </p>
-
-                        <hr />
-
-                        <h2>Subheading 2</h2>
-
-                        <p>Curabitur sem erat, tempor non, ullamcorper quis, dapibus a, ante. Aliquam tempus tellus eget 
-                        est. In hendrerit turpis sed ligula. Integer vulputate nibh congue magna. Duis commodo leo sit 
-                        amet quam. Nunc commodo sodales nunc. Donec est nunc, porttitor et, accumsan nec, pretium quis, 
-                        mauris. Duis sapien. Nulla felis lorem, accumsan vitae, ultricies et, hendrerit vel, massa. In 
-                        nonummy tortor et metus. Aenean lacinia orci non risus. Aenean vulputate vel lectus.</p>
-                    </asp:Content>
-
 
