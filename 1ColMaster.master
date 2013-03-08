@@ -22,6 +22,16 @@
             <asp:Image ID="CashFlowHeader" runat="server" ImageUrl="~/images/CashFlowClub.png" 
                 AlternateText="CashFlow Club" />
 
+                 <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" 
+                Orientation="Horizontal" PathSeparator="|" CssClass="menustyle">
+                <DynamicMenuItemStyle CssClass="menustyle" ForeColor="#E5E749" 
+                    Font-Names="Agency FB" />
+                <DynamicMenuStyle CssClass="menustyle" />
+                <StaticMenuItemStyle CssClass="menustyle" ForeColor="#E5E749" 
+                    Font-Names="Agency FB" />
+                <StaticMenuStyle CssClass="menustyle" />
+            </asp:Menu>    
+
             <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
         </div>    
 
