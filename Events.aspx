@@ -23,7 +23,7 @@
         DataSourceID="SqlDataSource1">
         <ItemTemplate>
              <h2>
-                <asp:Label ID="E_IDLabel" runat="server" Text='<%# Eval("Title") %>' />
+                <asp:Label ID="E_IDLabel" runat="server" Text='<%# Eval("E_Name") %>' />
                 <br />
             </h2>
             
@@ -35,7 +35,7 @@
             </p>
            
             <p>
-                <asp:Label ID="N_DescrLabel" runat="server" Text='<%# Eval("N_Descr") %>' />
+                <asp:Label ID="N_DescrLabel" runat="server" Text='<%# Eval("E_Descr") %>' />
                 <br />
             </p>
             <hr />
