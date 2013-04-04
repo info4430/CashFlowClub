@@ -23,7 +23,8 @@
                 AlternateText="CashFlow Club" />
 
                  <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" 
-                Orientation="Horizontal" PathSeparator="|" CssClass="menustyle">
+                Orientation="Horizontal" PathSeparator="|" CssClass="menustyle" 
+                StaticDisplayLevels="2">
                 <DynamicMenuItemStyle CssClass="menustyle" ForeColor="#E5E749" 
                     Font-Names="Agency FB" />
                 <DynamicMenuStyle CssClass="menustyle" />
