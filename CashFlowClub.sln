@@ -1,18 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CashFlowClub", ".", "{5AB4A55C-F81E-48DA-989D-F01B305C5348}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CashFlowClub", ".", "{057B7845-4E81-4745-9DA8-45C96385624D}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/CashFlowClub"
-		Debug.AspNetCompiler.PhysicalPath = "..\CashFlowClub\"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\GitHub\CashFlowClub\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\CashFlowClub\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/CashFlowClub"
-		Release.AspNetCompiler.PhysicalPath = "..\CashFlowClub\"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\GitHub\CashFlowClub\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\CashFlowClub\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
@@ -26,8 +26,8 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5AB4A55C-F81E-48DA-989D-F01B305C5348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5AB4A55C-F81E-48DA-989D-F01B305C5348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{057B7845-4E81-4745-9DA8-45C96385624D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{057B7845-4E81-4745-9DA8-45C96385624D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

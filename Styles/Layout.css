@@ -84,3 +84,20 @@
     padding-left: 10px;
     padding-right: 30px;
 }
+
+.productright
+{
+    float:left;
+    width:50%;
+    text-align:left;    
+    height:30px;
+        
+}
+
+.productleft
+{
+    float:left;
+    width:50%;
+    text-align:right;
+        
+}
