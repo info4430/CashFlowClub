@@ -15,31 +15,54 @@
 <asp:Content ID="Content6" runat="server" 
     contentplaceholderid="LeftColumnWhite">
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
-    ConnectionString="<%$ ConnectionStrings:NewsConnectionString %>" 
-    SelectCommand="SELECT * FROM [Events] ORDER BY [E_Date]"></asp:SqlDataSource>
+    ConnectionString="<%$ ConnectionStrings:Eventsadminconnectionstring %>" 
+    SelectCommand="SELECT * FROM [Events]" 
+        DeleteCommand="DELETE FROM [Events] WHERE [E_ID] = @E_ID" 
+        InsertCommand="INSERT INTO [Events] ([A_ID], [E_Date], [E_Time], [E_Name], [E_Descr]) VALUES (@A_ID, @E_Date, @E_Time, @E_Name, @E_Descr)" 
+        UpdateCommand="UPDATE [Events] SET [A_ID] = @A_ID, [E_Date] = @E_Date, [E_Time] = @E_Time, [E_Name] = @E_Name, [E_Descr] = @E_Descr WHERE [E_ID] = @E_ID">
+        <DeleteParameters>
+            <asp:Parameter Name="E_ID" Type="Int32" />
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:Parameter Name="A_ID" Type="Int32" />
+            <asp:Parameter DbType="Date" Name="E_Date" />
+            <asp:Parameter Name="E_Time" Type="String" />
+            <asp:Parameter Name="E_Name" Type="String" />
+            <asp:Parameter Name="E_Descr" Type="String" />
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="A_ID" Type="Int32" />
+            <asp:Parameter DbType="Date" Name="E_Date" />
+            <asp:Parameter Name="E_Time" Type="String" />
+            <asp:Parameter Name="E_Name" Type="String" />
+            <asp:Parameter Name="E_Descr" Type="String" />
+            <asp:Parameter Name="E_ID" Type="Int32" />
+        </UpdateParameters>
+    </asp:SqlDataSource>
 
 
     <asp:DataList ID="Events" runat="server" DataKeyField="E_ID" 
         DataSourceID="SqlDataSource1">
         <ItemTemplate>
-             <h2>
-                <asp:Label ID="E_IDLabel" runat="server" Text='<%# Eval("E_Name") %>' />
-                <br />
-            </h2>
-            
-            
-            <p>
-                <asp:Label ID="E_DateLabel" runat="server" 
-                    Text='<%# Eval("E_Date", "{0:d}") %>' />
-                <br />
-            </p>
-           
-            <p>
-                <asp:Label ID="N_DescrLabel" runat="server" Text='<%# Eval("E_Descr") %>' />
-                <br />
-            </p>
-            <hr />
+             E_ID:
+             <asp:Label ID="E_IDLabel" runat="server" Text='<%# Eval("E_ID") %>' />
 <br />
+             A_ID:
+             <asp:Label ID="A_IDLabel" runat="server" Text='<%# Eval("A_ID") %>' />
+             <br />
+             E_Date:
+             <asp:Label ID="E_DateLabel" runat="server" Text='<%# Eval("E_Date") %>' />
+             <br />
+             E_Time:
+             <asp:Label ID="E_TimeLabel" runat="server" Text='<%# Eval("E_Time") %>' />
+             <br />
+             E_Name:
+             <asp:Label ID="E_NameLabel" runat="server" Text='<%# Eval("E_Name") %>' />
+             <br />
+             E_Descr:
+             <asp:Label ID="E_DescrLabel" runat="server" Text='<%# Eval("E_Descr") %>' />
+             <br />
+             <br />
         </ItemTemplate>
     </asp:DataList>
 
