@@ -44,24 +44,23 @@
     <asp:DataList ID="Events" runat="server" DataKeyField="E_ID" 
         DataSourceID="SqlDataSource1">
         <ItemTemplate>
-             E_ID:
-             <asp:Label ID="E_IDLabel" runat="server" Text='<%# Eval("E_ID") %>' />
-<br />
-             A_ID:
+
+
              <asp:Label ID="A_IDLabel" runat="server" Text='<%# Eval("A_ID") %>' />
              <br />
-             E_Date:
+
              <asp:Label ID="E_DateLabel" runat="server" Text='<%# Eval("E_Date") %>' />
              <br />
-             E_Time:
+
              <asp:Label ID="E_TimeLabel" runat="server" Text='<%# Eval("E_Time") %>' />
              <br />
-             E_Name:
+
              <asp:Label ID="E_NameLabel" runat="server" Text='<%# Eval("E_Name") %>' />
              <br />
-             E_Descr:
+
              <asp:Label ID="E_DescrLabel" runat="server" Text='<%# Eval("E_Descr") %>' />
              <br />
+             <hr />
              <br />
         </ItemTemplate>
     </asp:DataList>

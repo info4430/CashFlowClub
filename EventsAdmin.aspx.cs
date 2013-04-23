@@ -21,6 +21,7 @@ public partial class EventsAdmin2 : System.Web.UI.Page
         SqlDataSource1.InsertParameters["E_Descr"].DefaultValue = EventDescrTXT.Text;
 
 
+
         try
         {
             SqlDataSource1.Insert();

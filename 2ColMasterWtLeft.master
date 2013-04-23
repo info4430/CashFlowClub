@@ -82,6 +82,12 @@
                     </asp:ContentPlaceHolder>
                 </div>
             </div>
+            
+            <asp:DataList ID="DataList1" runat="server" DataSourceID="XmlDataSource1">
+            </asp:DataList>
+            <asp:XmlDataSource ID="XmlDataSource1" runat="server" 
+                DataFile="~/App_Code/RSS.xml"></asp:XmlDataSource>
+            
         </div>
     </div>
     </form>

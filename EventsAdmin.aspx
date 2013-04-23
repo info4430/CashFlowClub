@@ -7,66 +7,65 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="FullColumnContent" Runat="Server">
 
     <asp:Panel ID="Panel1" runat="server" ScrollBars="Horizontal">
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
-    ConnectionString="<%$ ConnectionStrings:EventsConnectionString %>"
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+    ConnectionString="<%$ ConnectionStrings:Eventsadminconnectionstring %>" 
     DeleteCommand="DELETE FROM [Events] WHERE [E_ID] = @E_ID" 
-    InsertCommand="INSERT INTO [Events] ([E_Date], [E_Time], [E_Name], [E_Descr]) VALUES (@E_Date, @E_Time, @E_Name, @E_Descr)"
-    ProviderName="<%$ ConnectionStrings:EventsConnectionString.ProviderName %>" 
-    SelectCommand="SELECT * FROM [Events] ORDER BY [E_Date]"
-    UpdateCommand="UPDATE [Events] SET [E_Date] = @E_Date, [E_Time] = @E_Time, [E_Name] = @E_Name, [E_Descr] = @E_Descr WHERE [E_ID] = @E_ID">
-    <DeleteParameters>
+    InsertCommand="INSERT INTO [Events] ([A_ID], [E_Date], [E_Time], [E_Name], [E_Descr]) VALUES (@A_ID, @E_Date, @E_Time, @E_Name, @E_Descr)" 
+    SelectCommand="SELECT * FROM [Events]" 
+    
+            
+            UpdateCommand="UPDATE [Events] SET [A_ID] = @A_ID, [E_Date] = @E_Date, [E_Time] = @E_Time, [E_Name] = @E_Name, [E_Descr] = @E_Descr WHERE [E_ID] = @E_ID">
+            <DeleteParameters>
                 <asp:Parameter Name="E_ID" Type="Int32" />
             </DeleteParameters>
             <InsertParameters>
-                <asp:Parameter Name="E_Date" Type="DateTime" />
-                <asp:Parameter Name="E_Time" Type="Char" />
-                <asp:Parameter Name="E_Name" Type="Char" />
+                <asp:Parameter Name="A_ID" Type="Int32" />
+                <asp:Parameter DbType="Date" Name="E_Date" />
+                <asp:Parameter Name="E_Time" Type="String" />
+                <asp:Parameter Name="E_Name" Type="String" />
                 <asp:Parameter Name="E_Descr" Type="String" />
             </InsertParameters>
             <UpdateParameters>
-                <asp:Parameter Name="E_Date" Type="DateTime" />
-                <asp:Parameter Name="E_Time" Type="Char" />
-                <asp:Parameter Name="E_Name" Type="Char" />
+                <asp:Parameter Name="A_ID" Type="Int32" />
+                <asp:Parameter DbType="Date" Name="E_Date" />
+                <asp:Parameter Name="E_Time" Type="String" />
+                <asp:Parameter Name="E_Name" Type="String" />
                 <asp:Parameter Name="E_Descr" Type="String" />
                 <asp:Parameter Name="E_ID" Type="Int32" />
             </UpdateParameters>
-        
-    </asp:SqlDataSource>
+        </asp:SqlDataSource>
 
-        
-        <asp:GridView ID="EventsGridView" runat="server" DataSourceID="SqlDataSource1" DataKeyNames="E_ID">
+        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" 
+            AutoGenerateColumns="False" DataKeyNames="E_ID" DataSourceID="SqlDataSource1">
             <Columns>
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True">
-                    <ControlStyle BorderColor="#467019" />
-                    <FooterStyle BorderColor="#467019" />
-                    <HeaderStyle BackColor="White" BorderColor="#467019" />
-                    </asp:CommandField>
-                    <asp:BoundField DataField="E_ID" HeaderText="Event ID" ReadOnly="True" 
-                        SortExpression="E_ID" InsertVisible="False" >
-                    <ControlStyle BorderColor="#467019" BorderStyle="Solid" />
-                    <HeaderStyle BackColor="White" />
-                    <ItemStyle ForeColor="#467019" />
-                    </asp:BoundField>
-                    <asp:BoundField DataField="E_Date" HeaderText="Event Date" 
-                        SortExpression="E_Date" >
-                    <HeaderStyle BackColor="White" />
-                    <ItemStyle ForeColor="#467019" />
-                    </asp:BoundField>
-                    <asp:BoundField DataField="E_Time" HeaderText="Event Time" 
-                        SortExpression="E_Time" >
-                    <HeaderStyle BackColor="White" />
-                    <ItemStyle ForeColor="#467019" />
-                    </asp:BoundField>
-                    <asp:BoundField DataField="E_Name" HeaderText="Event Name" 
-                        SortExpression="E_Time" >
-                    <HeaderStyle BackColor="White" />
-                    <ItemStyle ForeColor="#467019" />
-                    </asp:BoundField>
-                    <asp:BoundField DataField="E_Descr" HeaderText="Event Description" 
-                        SortExpression="E_Descr" >
-                    <HeaderStyle BackColor="White" />
-                    <ItemStyle ForeColor="#467019" />
-                    </asp:BoundField>
+                <HeaderStyle BackColor="#006600" ForeColor="White" />
+                </asp:CommandField>
+                <asp:BoundField DataField="E_ID" HeaderText="Event ID" ReadOnly="True" 
+                    SortExpression="E_ID" InsertVisible="False">
+                <HeaderStyle BackColor="#006600" ForeColor="White" />
+                </asp:BoundField>
+                <asp:BoundField DataField="A_ID" HeaderText="Admin ID" 
+                    SortExpression="A_ID" >
+                    <HeaderStyle BackColor="#006600" ForeColor="White" />
+                </asp:BoundField>
+                <asp:BoundField DataField="E_Date" HeaderText="Event Date" 
+                    SortExpression="E_Date" >
+                    <HeaderStyle BackColor="#006600" ForeColor="White" />
+                </asp:BoundField>
+                <asp:BoundField DataField="E_Time" HeaderText="Event Time" 
+                    SortExpression="E_Time" >
+                    <HeaderStyle BackColor="#006600" ForeColor="White" />
+                </asp:BoundField>
+                <asp:BoundField DataField="E_Name" HeaderText="Event Name" 
+                    SortExpression="E_Name" >
+                    <HeaderStyle BackColor="#006600" ForeColor="White" />
+                </asp:BoundField>
+                <asp:BoundField DataField="E_Descr" HeaderText="Event Description" 
+                    SortExpression="E_Descr">
+                <ControlStyle BackColor="#006600" ForeColor="White" />
+                <HeaderStyle BackColor="#006600" ForeColor="White" />
+                </asp:BoundField>
             </Columns>
         </asp:GridView>
 
@@ -126,7 +125,7 @@
             </li>
 
             <li class="productright">
-                <asp:TextBox ID="EventDescrTXT" runat="server"></asp:TextBox>
+                <asp:TextBox ID="EventDescrTXT" runat="server" Width="400px"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
                 ErrorMessage="Must provide a description" ValidationGroup="VEvent" 
                 ControlToValidate="EventDescrTXT" Display="Dynamic">*</asp:RequiredFieldValidator>
@@ -134,7 +133,7 @@
 
             
             <li class="productleft">
-                <asp:Button ID="AddBTN" runat="server" Text="Add Product" ValidationGroup="VEvent" 
+                <asp:Button ID="AddBTN" runat="server" Text="Add Event" ValidationGroup="VEvent" 
                     onclick="AddBTN_Click" />
             </li>
 

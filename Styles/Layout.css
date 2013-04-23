@@ -90,8 +90,7 @@
     float:left;
     width:50%;
     text-align:left;    
-    height:30px;
-        
+    height:30px;           
 }
 
 .productleft
@@ -100,4 +99,12 @@
     width:50%;
     text-align:right;
         
+}
+
+
+ol
+{
+    list-style:none;
+    margin:0;
+    padding:0;
 }

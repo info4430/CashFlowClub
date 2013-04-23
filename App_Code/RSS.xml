@@ -1,0 +1,42 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<Advertisements>  
+  <Ad>
+      <NavigateUrl>http://en.wikipedia.org/wiki/Cashflow_101</NavigateUrl>
+      <AlternateText>
+        Wiki posted an article about Cashflow 101
+       </AlternateText>
+      <Impressions>2</Impressions>
+   </Ad>
+   <Ad>
+      <ImageUrl>~/Maintenance/Images/Animals/minigiraffe.jpg</ImageUrl>
+      <NavigateUrl>~/ProductStore.aspx?prod=5</NavigateUrl>
+      <AlternateText>
+         Mini Giraffe
+       </AlternateText>
+      <Impressions>3</Impressions>
+   </Ad>
+   <Ad>
+      <ImageUrl>~/Maintenance/Images/Animals/MiniHippo2.jpg</ImageUrl>
+      <NavigateUrl>~/ProductStore.aspx?prod=6</NavigateUrl>
+      <AlternateText>
+         Mini Hippo
+       </AlternateText>
+      <Impressions>2</Impressions>
+   </Ad>
+   <Ad>
+      <ImageUrl>~/Maintenance/Images/Animals/minicroc.jpg</ImageUrl>
+      <NavigateUrl>~/ProductStore.aspx?prod=13</NavigateUrl>
+      <AlternateText>
+         Mini Crocs
+       </AlternateText>
+      <Impressions>1</Impressions>
+   </Ad>
+   <Ad>
+      <ImageUrl>~/Maintenance/Images/Animals/MiniMonkey.jpg</ImageUrl>
+      <NavigateUrl>~/ProductStore.aspx?prod=7</NavigateUrl>
+      <AlternateText>
+         Mini Monkey
+       </AlternateText>
+      <Impressions>1</Impressions>
+   </Ad>   
+</Advertisements>

@@ -2,7 +2,8 @@
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
     <siteMapNode url="Default.aspx" title="Home"  description="Club Homepage">
         <siteMapNode url="News.aspx" title="News"  description="News" />
+      <siteMapNode url="Events.aspx" title="Events"  description="Events" />
         <siteMapNode url="EventsAdmin.aspx" title="EAdmin"  description="Events Admin" />
-        <siteMapNode url="" title=""  description="" />
+        <siteMapNode url="Registration.aspx" title="Register"  description="Registration Page" />
     </siteMapNode>
 </siteMap>
